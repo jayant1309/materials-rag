@@ -1,0 +1,41 @@
+services:
+  rag-assistant:
+    build: .
+    container_name: materials-rag-ui
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./chroma_db:/app/chroma_db
+      - ./logs:/app/logs
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - CHROMA_DB_PATH=/app/chroma_db
+      - DATA_DIR=/app/data
+    depends_on:
+      ollama:
+        condition: service_healthy
+    networks:
+      - rag-network
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: materials-rag-ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "11434:11434"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - rag-network
+
+networks:
+  rag-network:
+    driver: bridge
+
+volumes:
+  ollama_data:

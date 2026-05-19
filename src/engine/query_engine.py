@@ -1,9 +1,6 @@
 from typing import List, Optional
 from pydantic import BaseModel
 
-from llama_index.core.query_engine import RetryingQueryEngine
-from llama_index.core.indices.vector_store import VectorIndexRetriever
-from llama_index.core.query_engine import CitationQueryEngine
 from llama_index.core import VectorStoreIndex
 
 from src.engine.index_manager import IndexManager

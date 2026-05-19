@@ -1,0 +1,275 @@
+{
+  "nodes": [
+    {
+      "id": "ui_app_app",
+      "label": "Materials Science RAG UI",
+      "file_type": "code",
+      "source_file": "src/ui/app.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_config_settings",
+      "label": "Application Settings",
+      "file_type": "code",
+      "source_file": "src/config.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Follow Pydantic-based configuration management for type safety and environment integration."
+    },
+    {
+      "id": "ingestion_pdf_parser_markerparser",
+      "label": "Marker PDF Parser",
+      "file_type": "code",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ingestion_pdf_parser_nougatparser",
+      "label": "Nougat PDF Parser",
+      "file_type": "code",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ingestion_pipeline_ingestionmanager",
+      "label": "Ingestion Manager",
+      "file_type": "code",
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Modularize ingestion as part of the system architecture."
+    },
+    {
+      "id": "engine_query_engine_materialsragqueryengine",
+      "label": "Materials RAG Query Engine",
+      "file_type": "code",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Modularize retrieval for domain-specific RAG."
+    },
+    {
+      "id": "engine_index_manager_indexmanager",
+      "label": "Index Manager",
+      "file_type": "code",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Uses LlamaIndex for orchestration and ChromaDB for vector storage."
+    },
+    {
+      "id": "evaluation_ragas_eval_ragasevaluator",
+      "label": "Ragas Evaluator",
+      "file_type": "code",
+      "source_file": "src/evaluation/ragas_eval.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Modularize evaluation using Ragas metrics."
+    },
+    {
+      "id": "utils_logger_setup_logger",
+      "label": "Logger Setup",
+      "file_type": "code",
+      "source_file": "src/utils/logger.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Use loguru for structured and configurable logging."
+    },
+    {
+      "id": "readme_materials_science_rag",
+      "label": "Materials Science RAG Project",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "configs_config_yaml_config",
+      "label": "YAML Configuration",
+      "file_type": "document",
+      "source_file": "configs/config.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gemini_modular_design",
+      "label": "Modular Design Principle",
+      "file_type": "rationale",
+      "source_file": "GEMINI.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "ui_app_app",
+      "target": "engine_query_engine_materialsragqueryengine",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/ui/app.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ui_app_app",
+      "target": "ingestion_pipeline_ingestionmanager",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/ui/app.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ui_app_app",
+      "target": "engine_index_manager_indexmanager",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/ui/app.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ingestion_pipeline_ingestionmanager",
+      "target": "engine_index_manager_indexmanager",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "engine_query_engine_materialsragqueryengine",
+      "target": "engine_index_manager_indexmanager",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/engine/query_engine.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "engine_index_manager_indexmanager",
+      "target": "src_config_settings",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/engine/index_manager.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "evaluation_ragas_eval_ragasevaluator",
+      "target": "engine_query_engine_materialsragqueryengine",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/evaluation/ragas_eval.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_settings",
+      "target": "configs_config_yaml_config",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ingestion_pdf_parser_markerparser",
+      "target": "ingestion_pdf_parser_nougatparser",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gemini_modular_design",
+      "target": "ingestion_pipeline_ingestionmanager",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "GEMINI.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "rag_orchestration_flow",
+      "label": "RAG Orchestration Flow",
+      "nodes": [
+        "ui_app_app",
+        "engine_query_engine_materialsragqueryengine",
+        "engine_index_manager_indexmanager"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/ui/app.py"
+    },
+    {
+      "id": "data_ingestion_path",
+      "label": "Data Ingestion Path",
+      "nodes": [
+        "ui_app_app",
+        "ingestion_pipeline_ingestionmanager",
+        "ingestion_pdf_parser_markerparser",
+        "engine_index_manager_indexmanager"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/ingestion/pipeline.py"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

@@ -1,0 +1,107 @@
+{
+  "/Users/jayant/Documents/project1/projectA/.gemini/settings.json": {
+    "mtime": 1779188469.3745425,
+    "ast_hash": "f080aabf772e803c9e24b9ad0acbf2b6",
+    "semantic_hash": "f080aabf772e803c9e24b9ad0acbf2b6"
+  },
+  "/Users/jayant/Documents/project1/projectA/tests/__init__.py": {
+    "mtime": 1779188022.2058558,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/jayant/Documents/project1/projectA/src/config.py": {
+    "mtime": 1779188506.1898494,
+    "ast_hash": "a25cf75f9340ff23882909aa954b36ad",
+    "semantic_hash": "a25cf75f9340ff23882909aa954b36ad"
+  },
+  "/Users/jayant/Documents/project1/projectA/src/__init__.py": {
+    "mtime": 1779188022.2056532,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/jayant/Documents/project1/projectA/src/ui/__init__.py": {
+    "mtime": 1779188022.2057142,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/jayant/Documents/project1/projectA/src/ui/app.py": {
+    "mtime": 1779188560.024407,
+    "ast_hash": "0fcefac768d260cb887c50af2a378664",
+    "semantic_hash": "0fcefac768d260cb887c50af2a378664"
+  },
+  "/Users/jayant/Documents/project1/projectA/src/ingestion/pdf_parser.py": {
+    "mtime": 1779188525.1386752,
+    "ast_hash": "f0f6ff76763d755ab315f33801572bc8",
+    "semantic_hash": "f0f6ff76763d755ab315f33801572bc8"
+  },
+  "/Users/jayant/Documents/project1/projectA/src/ingestion/__init__.py": {
+    "mtime": 1779188022.205662,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/jayant/Documents/project1/projectA/src/ingestion/pipeline.py": {
+    "mtime": 1779188572.6386216,
+    "ast_hash": "950f5abfac78c24ef11740bdd6d7151d",
+    "semantic_hash": "950f5abfac78c24ef11740bdd6d7151d"
+  },
+  "/Users/jayant/Documents/project1/projectA/src/utils/__init__.py": {
+    "mtime": 1779188022.2057238,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/jayant/Documents/project1/projectA/src/utils/logger.py": {
+    "mtime": 1779188506.1898842,
+    "ast_hash": "e9f5686b109e7d9b74ffe2b584898fdc",
+    "semantic_hash": "e9f5686b109e7d9b74ffe2b584898fdc"
+  },
+  "/Users/jayant/Documents/project1/projectA/src/evaluation/ragas_eval.py": {
+    "mtime": 1779188572.6386247,
+    "ast_hash": "d6b38b495024fb21a756a235e856933a",
+    "semantic_hash": "d6b38b495024fb21a756a235e856933a"
+  },
+  "/Users/jayant/Documents/project1/projectA/src/evaluation/__init__.py": {
+    "mtime": 1779188022.2060137,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/jayant/Documents/project1/projectA/src/engine/query_engine.py": {
+    "mtime": 1779188544.8724606,
+    "ast_hash": "843b5e0f5424b83501c48037e76754f4",
+    "semantic_hash": "843b5e0f5424b83501c48037e76754f4"
+  },
+  "/Users/jayant/Documents/project1/projectA/src/engine/__init__.py": {
+    "mtime": 1779188022.20564,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/jayant/Documents/project1/projectA/src/engine/index_manager.py": {
+    "mtime": 1779188535.8540168,
+    "ast_hash": "93701062fc65e3de8334c3dc6516251c",
+    "semantic_hash": "93701062fc65e3de8334c3dc6516251c"
+  },
+  "/Users/jayant/Documents/project1/projectA/docker-compose.yaml": {
+    "mtime": 1779188022.2044773,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/jayant/Documents/project1/projectA/requirements.txt": {
+    "mtime": 1779188560.0261638,
+    "ast_hash": "f02bb2a2716cf3cad50f3d0103abf6b7",
+    "semantic_hash": "f02bb2a2716cf3cad50f3d0103abf6b7"
+  },
+  "/Users/jayant/Documents/project1/projectA/README.md": {
+    "mtime": 1779188022.2056282,
+    "ast_hash": "4b49184142321e94d33c50171b46b799",
+    "semantic_hash": "4b49184142321e94d33c50171b46b799"
+  },
+  "/Users/jayant/Documents/project1/projectA/GEMINI.md": {
+    "mtime": 1779188469.3742707,
+    "ast_hash": "ab02e6223f58b96c920c2cc3365849f0",
+    "semantic_hash": "ab02e6223f58b96c920c2cc3365849f0"
+  },
+  "/Users/jayant/Documents/project1/projectA/configs/config.yaml": {
+    "mtime": 1779188506.1900733,
+    "ast_hash": "7ada5e05069c47fe7fab22b8c50d5610",
+    "semantic_hash": "7ada5e05069c47fe7fab22b8c50d5610"
+  }
+}

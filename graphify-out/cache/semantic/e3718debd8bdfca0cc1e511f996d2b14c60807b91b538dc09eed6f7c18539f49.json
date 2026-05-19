@@ -1,0 +1,1 @@
+{"nodes": [{"id": "utils_logger_setup_logger", "label": "Logger Setup", "file_type": "code", "source_file": "src/utils/logger.py", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null, "rationale": "Use loguru for structured and configurable logging."}], "edges": [], "hyperedges": []}

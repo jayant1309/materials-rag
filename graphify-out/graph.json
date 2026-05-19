@@ -1,0 +1,1675 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "rag_orchestration_flow",
+        "label": "RAG Orchestration Flow",
+        "nodes": [
+          "ui_app_app",
+          "engine_query_engine_materialsragqueryengine",
+          "engine_index_manager_indexmanager"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.95,
+        "source_file": "src/ui/app.py"
+      },
+      {
+        "id": "data_ingestion_path",
+        "label": "Data Ingestion Path",
+        "nodes": [
+          "ui_app_app",
+          "ingestion_pipeline_ingestionmanager",
+          "ingestion_pdf_parser_markerparser",
+          "engine_index_manager_indexmanager"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.95,
+        "source_file": "src/ingestion/pipeline.py"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": ".gemini/settings.json",
+      "source_location": "L1",
+      "id": "gemini_settings_json",
+      "community": 6,
+      "norm_label": "settings.json"
+    },
+    {
+      "label": "hooks",
+      "file_type": "code",
+      "source_file": ".gemini/settings.json",
+      "source_location": "L2",
+      "id": "gemini_settings_hooks",
+      "community": 6,
+      "norm_label": "hooks"
+    },
+    {
+      "label": "BeforeTool",
+      "file_type": "code",
+      "source_file": ".gemini/settings.json",
+      "source_location": "L3",
+      "id": "gemini_settings_hooks_beforetool",
+      "community": 6,
+      "norm_label": "beforetool"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "tests/__init__.py",
+      "source_location": "L1",
+      "id": "tests_init_py",
+      "community": 8,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "config.py",
+      "file_type": "code",
+      "source_file": "src/config.py",
+      "source_location": "L1",
+      "id": "src_config_py",
+      "community": 2,
+      "norm_label": "config.py"
+    },
+    {
+      "label": "LLMSettings",
+      "file_type": "code",
+      "source_file": "src/config.py",
+      "source_location": "L10",
+      "id": "src_config_llmsettings",
+      "community": 2,
+      "norm_label": "llmsettings"
+    },
+    {
+      "label": "BaseSettings",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "basesettings",
+      "community": 2,
+      "norm_label": "basesettings"
+    },
+    {
+      "label": "EmbeddingSettings",
+      "file_type": "code",
+      "source_file": "src/config.py",
+      "source_location": "L18",
+      "id": "src_config_embeddingsettings",
+      "community": 2,
+      "norm_label": "embeddingsettings"
+    },
+    {
+      "label": "StorageSettings",
+      "file_type": "code",
+      "source_file": "src/config.py",
+      "source_location": "L24",
+      "id": "src_config_storagesettings",
+      "community": 2,
+      "norm_label": "storagesettings"
+    },
+    {
+      "label": "AppSettings",
+      "file_type": "code",
+      "source_file": "src/config.py",
+      "source_location": "L30",
+      "id": "src_config_appsettings",
+      "community": 2,
+      "norm_label": "appsettings"
+    },
+    {
+      "label": "load_config()",
+      "file_type": "code",
+      "source_file": "src/config.py",
+      "source_location": "L46",
+      "id": "src_config_load_config",
+      "community": 2,
+      "norm_label": "load_config()"
+    },
+    {
+      "label": "Settings for the Large Language Model (Ollama).",
+      "file_type": "rationale",
+      "source_file": "src/config.py",
+      "source_location": "L11",
+      "id": "src_config_rationale_11",
+      "community": 2,
+      "norm_label": "settings for the large language model (ollama)."
+    },
+    {
+      "label": "Settings for the embedding model.",
+      "file_type": "rationale",
+      "source_file": "src/config.py",
+      "source_location": "L19",
+      "id": "src_config_rationale_19",
+      "community": 2,
+      "norm_label": "settings for the embedding model."
+    },
+    {
+      "label": "Settings for vector storage and data paths.",
+      "file_type": "rationale",
+      "source_file": "src/config.py",
+      "source_location": "L25",
+      "id": "src_config_rationale_25",
+      "community": 2,
+      "norm_label": "settings for vector storage and data paths."
+    },
+    {
+      "label": "Global application settings combining all sub-settings.",
+      "file_type": "rationale",
+      "source_file": "src/config.py",
+      "source_location": "L31",
+      "id": "src_config_rationale_31",
+      "community": 2,
+      "norm_label": "global application settings combining all sub-settings."
+    },
+    {
+      "label": "Loads application settings from environment variables and optionally a YAML file",
+      "file_type": "rationale",
+      "source_file": "src/config.py",
+      "source_location": "L47",
+      "id": "src_config_rationale_47",
+      "community": 2,
+      "norm_label": "loads application settings from environment variables and optionally a yaml file"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/__init__.py",
+      "source_location": "L1",
+      "id": "src_init_py",
+      "community": 9,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/ui/__init__.py",
+      "source_location": "L1",
+      "id": "src_ui_init_py",
+      "community": 10,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "app.py",
+      "file_type": "code",
+      "source_file": "src/ui/app.py",
+      "source_location": "L1",
+      "id": "src_ui_app_py",
+      "community": 11,
+      "norm_label": "app.py"
+    },
+    {
+      "label": "pdf_parser.py",
+      "file_type": "code",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L1",
+      "id": "src_ingestion_pdf_parser_py",
+      "community": 0,
+      "norm_label": "pdf_parser.py"
+    },
+    {
+      "label": "BasePDFParser",
+      "file_type": "code",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L10",
+      "id": "ingestion_pdf_parser_basepdfparser",
+      "community": 0,
+      "norm_label": "basepdfparser"
+    },
+    {
+      "label": "ABC",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "abc",
+      "community": 0,
+      "norm_label": "abc"
+    },
+    {
+      "label": "parse()",
+      "file_type": "code",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L14",
+      "id": "ingestion_pdf_parser_parse",
+      "community": 0,
+      "norm_label": "parse()"
+    },
+    {
+      "label": "MarkerParser",
+      "file_type": "code",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L19",
+      "id": "ingestion_pdf_parser_markerparser",
+      "community": 0,
+      "norm_label": "markerparser"
+    },
+    {
+      "label": ".parse()",
+      "file_type": "code",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L22",
+      "id": "ingestion_pdf_parser_markerparser_parse",
+      "community": 0,
+      "norm_label": ".parse()"
+    },
+    {
+      "label": "NougatParser",
+      "file_type": "code",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L46",
+      "id": "ingestion_pdf_parser_nougatparser",
+      "community": 0,
+      "norm_label": "nougatparser"
+    },
+    {
+      "label": ".parse()",
+      "file_type": "code",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L49",
+      "id": "ingestion_pdf_parser_nougatparser_parse",
+      "community": 0,
+      "norm_label": ".parse()"
+    },
+    {
+      "label": "get_parser()",
+      "file_type": "code",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L60",
+      "id": "ingestion_pdf_parser_get_parser",
+      "community": 0,
+      "norm_label": "get_parser()"
+    },
+    {
+      "label": "Abstract base class for PDF parsers.",
+      "file_type": "rationale",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L11",
+      "id": "ingestion_pdf_parser_rationale_11",
+      "community": 0,
+      "norm_label": "abstract base class for pdf parsers."
+    },
+    {
+      "label": "Parses a PDF file and returns a list of LlamaIndex Documents.",
+      "file_type": "rationale",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L15",
+      "id": "ingestion_pdf_parser_rationale_15",
+      "community": 12,
+      "norm_label": "parses a pdf file and returns a list of llamaindex documents."
+    },
+    {
+      "label": "PDF parser using the Marker library for high-quality markdown extraction.",
+      "file_type": "rationale",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L20",
+      "id": "ingestion_pdf_parser_rationale_20",
+      "community": 0,
+      "norm_label": "pdf parser using the marker library for high-quality markdown extraction."
+    },
+    {
+      "label": "Parses a PDF using Marker.                  Note: This assumes Marker is install",
+      "file_type": "rationale",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L23",
+      "id": "ingestion_pdf_parser_rationale_23",
+      "community": 0,
+      "norm_label": "parses a pdf using marker.                  note: this assumes marker is install"
+    },
+    {
+      "label": "PDF parser using Meta's Nougat for scientific document parsing.",
+      "file_type": "rationale",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L47",
+      "id": "ingestion_pdf_parser_rationale_47",
+      "community": 0,
+      "norm_label": "pdf parser using meta's nougat for scientific document parsing."
+    },
+    {
+      "label": "Parses a PDF using Nougat.",
+      "file_type": "rationale",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L50",
+      "id": "ingestion_pdf_parser_rationale_50",
+      "community": 0,
+      "norm_label": "parses a pdf using nougat."
+    },
+    {
+      "label": "Factory function to get the appropriate PDF parser.",
+      "file_type": "rationale",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L61",
+      "id": "ingestion_pdf_parser_rationale_61",
+      "community": 0,
+      "norm_label": "factory function to get the appropriate pdf parser."
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/ingestion/__init__.py",
+      "source_location": "L1",
+      "id": "src_ingestion_init_py",
+      "community": 13,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "pipeline.py",
+      "file_type": "code",
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": "L1",
+      "id": "src_ingestion_pipeline_py",
+      "community": 4,
+      "norm_label": "pipeline.py"
+    },
+    {
+      "label": "IngestionManager",
+      "file_type": "code",
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": "L14",
+      "id": "ingestion_pipeline_ingestionmanager",
+      "community": 4,
+      "norm_label": "ingestionmanager"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": "L17",
+      "id": "ingestion_pipeline_ingestionmanager_init",
+      "community": 4,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".process_directory()",
+      "file_type": "code",
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": "L28",
+      "id": "ingestion_pipeline_ingestionmanager_process_directory",
+      "community": 4,
+      "norm_label": ".process_directory()"
+    },
+    {
+      "label": "Manages the ingestion pipeline from PDF to Vector Store.",
+      "file_type": "rationale",
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": "L15",
+      "id": "ingestion_pipeline_rationale_15",
+      "community": 4,
+      "norm_label": "manages the ingestion pipeline from pdf to vector store."
+    },
+    {
+      "label": "Parses all PDFs in a directory and runs them through the ingestion pipeline.",
+      "file_type": "rationale",
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": "L29",
+      "id": "ingestion_pipeline_rationale_29",
+      "community": 4,
+      "norm_label": "parses all pdfs in a directory and runs them through the ingestion pipeline."
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/utils/__init__.py",
+      "source_location": "L1",
+      "id": "src_utils_init_py",
+      "community": 14,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "logger.py",
+      "file_type": "code",
+      "source_file": "src/utils/logger.py",
+      "source_location": "L1",
+      "id": "src_utils_logger_py",
+      "community": 7,
+      "norm_label": "logger.py"
+    },
+    {
+      "label": "setup_logger()",
+      "file_type": "code",
+      "source_file": "src/utils/logger.py",
+      "source_location": "L4",
+      "id": "utils_logger_setup_logger",
+      "community": 7,
+      "norm_label": "setup_logger()"
+    },
+    {
+      "label": "Configures the global logger with a standard format.          Args:         log_",
+      "file_type": "rationale",
+      "source_file": "src/utils/logger.py",
+      "source_location": "L5",
+      "id": "utils_logger_rationale_5",
+      "community": 7,
+      "norm_label": "configures the global logger with a standard format.          args:         log_"
+    },
+    {
+      "label": "ragas_eval.py",
+      "file_type": "code",
+      "source_file": "src/evaluation/ragas_eval.py",
+      "source_location": "L1",
+      "id": "src_evaluation_ragas_eval_py",
+      "community": 5,
+      "norm_label": "ragas_eval.py"
+    },
+    {
+      "label": "RagasEvaluator",
+      "file_type": "code",
+      "source_file": "src/evaluation/ragas_eval.py",
+      "source_location": "L14",
+      "id": "evaluation_ragas_eval_ragasevaluator",
+      "community": 5,
+      "norm_label": "ragasevaluator"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "src/evaluation/ragas_eval.py",
+      "source_location": "L17",
+      "id": "evaluation_ragas_eval_ragasevaluator_init",
+      "community": 5,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".run_evaluation()",
+      "file_type": "code",
+      "source_file": "src/evaluation/ragas_eval.py",
+      "source_location": "L26",
+      "id": "evaluation_ragas_eval_ragasevaluator_run_evaluation",
+      "community": 5,
+      "norm_label": ".run_evaluation()"
+    },
+    {
+      "label": "Evaluates the RAG system performance using Ragas metrics.",
+      "file_type": "rationale",
+      "source_file": "src/evaluation/ragas_eval.py",
+      "source_location": "L15",
+      "id": "evaluation_ragas_eval_rationale_15",
+      "community": 5,
+      "norm_label": "evaluates the rag system performance using ragas metrics."
+    },
+    {
+      "label": "Runs Ragas evaluation on a set of test questions.                  Args:",
+      "file_type": "rationale",
+      "source_file": "src/evaluation/ragas_eval.py",
+      "source_location": "L27",
+      "id": "evaluation_ragas_eval_rationale_27",
+      "community": 5,
+      "norm_label": "runs ragas evaluation on a set of test questions.                  args:"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/evaluation/__init__.py",
+      "source_location": "L1",
+      "id": "src_evaluation_init_py",
+      "community": 15,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "query_engine.py",
+      "file_type": "code",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L1",
+      "id": "src_engine_query_engine_py",
+      "community": 3,
+      "norm_label": "query_engine.py"
+    },
+    {
+      "label": "SourceNode",
+      "file_type": "code",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L13",
+      "id": "engine_query_engine_sourcenode",
+      "community": 3,
+      "norm_label": "sourcenode"
+    },
+    {
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "basemodel",
+      "community": 3,
+      "norm_label": "basemodel"
+    },
+    {
+      "label": "QueryResult",
+      "file_type": "code",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L21",
+      "id": "engine_query_engine_queryresult",
+      "community": 3,
+      "norm_label": "queryresult"
+    },
+    {
+      "label": "MaterialsRAGQueryEngine",
+      "file_type": "code",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L28",
+      "id": "engine_query_engine_materialsragqueryengine",
+      "community": 1,
+      "norm_label": "materialsragqueryengine"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L31",
+      "id": "engine_query_engine_materialsragqueryengine_init",
+      "community": 1,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".query()",
+      "file_type": "code",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L45",
+      "id": "engine_query_engine_materialsragqueryengine_query",
+      "community": 3,
+      "norm_label": ".query()"
+    },
+    {
+      "label": "Represents a source node for a query response.",
+      "file_type": "rationale",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L14",
+      "id": "engine_query_engine_rationale_14",
+      "community": 3,
+      "norm_label": "represents a source node for a query response."
+    },
+    {
+      "label": "Structured result of a RAG query.",
+      "file_type": "rationale",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L22",
+      "id": "engine_query_engine_rationale_22",
+      "community": 3,
+      "norm_label": "structured result of a rag query."
+    },
+    {
+      "label": "Core Query Engine for the Materials Science Research Assistant.",
+      "file_type": "rationale",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L29",
+      "id": "engine_query_engine_rationale_29",
+      "community": 1,
+      "norm_label": "core query engine for the materials science research assistant."
+    },
+    {
+      "label": "Executes a query against the RAG system.                  Args:             quer",
+      "file_type": "rationale",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L46",
+      "id": "engine_query_engine_rationale_46",
+      "community": 3,
+      "norm_label": "executes a query against the rag system.                  args:             quer"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/engine/__init__.py",
+      "source_location": "L1",
+      "id": "src_engine_init_py",
+      "community": 16,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "index_manager.py",
+      "file_type": "code",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L1",
+      "id": "src_engine_index_manager_py",
+      "community": 1,
+      "norm_label": "index_manager.py"
+    },
+    {
+      "label": "IndexManager",
+      "file_type": "code",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L11",
+      "id": "engine_index_manager_indexmanager",
+      "community": 1,
+      "norm_label": "indexmanager"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L14",
+      "id": "engine_index_manager_indexmanager_init",
+      "community": 1,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".get_index()",
+      "file_type": "code",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L37",
+      "id": "engine_index_manager_indexmanager_get_index",
+      "community": 1,
+      "norm_label": ".get_index()"
+    },
+    {
+      "label": ".add_documents()",
+      "file_type": "code",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L69",
+      "id": "engine_index_manager_indexmanager_add_documents",
+      "community": 1,
+      "norm_label": ".add_documents()"
+    },
+    {
+      "label": "Manages the creation and loading of the VectorStoreIndex with ChromaDB.",
+      "file_type": "rationale",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L12",
+      "id": "engine_index_manager_rationale_12",
+      "community": 1,
+      "norm_label": "manages the creation and loading of the vectorstoreindex with chromadb."
+    },
+    {
+      "label": "Initializes or loads the VectorStoreIndex from ChromaDB.                  Return",
+      "file_type": "rationale",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L38",
+      "id": "engine_index_manager_rationale_38",
+      "community": 1,
+      "norm_label": "initializes or loads the vectorstoreindex from chromadb.                  return"
+    },
+    {
+      "label": "Adds documents to the index and persists them.",
+      "file_type": "rationale",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L70",
+      "id": "engine_index_manager_rationale_70",
+      "community": 1,
+      "norm_label": "adds documents to the index and persists them."
+    },
+    {
+      "label": "Materials Science RAG UI",
+      "file_type": "code",
+      "source_file": "src/ui/app.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ui_app_app",
+      "community": 1,
+      "norm_label": "materials science rag ui"
+    },
+    {
+      "label": "Application Settings",
+      "file_type": "code",
+      "source_file": "src/config.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Follow Pydantic-based configuration management for type safety and environment integration.",
+      "id": "src_config_settings",
+      "community": 1,
+      "norm_label": "application settings"
+    },
+    {
+      "label": "Materials Science RAG Project",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_materials_science_rag",
+      "community": 17,
+      "norm_label": "materials science rag project"
+    },
+    {
+      "label": "YAML Configuration",
+      "file_type": "document",
+      "source_file": "configs/config.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "configs_config_yaml_config",
+      "community": 1,
+      "norm_label": "yaml configuration"
+    },
+    {
+      "label": "Modular Design Principle",
+      "file_type": "rationale",
+      "source_file": "GEMINI.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "gemini_modular_design",
+      "community": 4,
+      "norm_label": "modular design principle"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "gemini_settings_json",
+      "target": "gemini_settings_hooks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/settings.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "gemini_settings_hooks",
+      "target": "gemini_settings_hooks_beforetool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_config_py",
+      "target": "src_config_llmsettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_config_py",
+      "target": "src_config_embeddingsettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_config_py",
+      "target": "src_config_storagesettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_config_py",
+      "target": "src_config_appsettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "src_config_py",
+      "target": "src_config_load_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_config_llmsettings",
+      "target": "basesettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "src_config_load_config",
+      "target": "src_config_llmsettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_config_rationale_11",
+      "target": "src_config_llmsettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_config_embeddingsettings",
+      "target": "basesettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_config_storagesettings",
+      "target": "basesettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_config_appsettings",
+      "target": "basesettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "src_config_load_config",
+      "target": "src_config_embeddingsettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_config_rationale_19",
+      "target": "src_config_embeddingsettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "src_config_load_config",
+      "target": "src_config_storagesettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "src_config_rationale_25",
+      "target": "src_config_storagesettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "src_config_load_config",
+      "target": "src_config_appsettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "src_config_rationale_31",
+      "target": "src_config_appsettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "src_config_rationale_47",
+      "target": "src_config_load_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_ingestion_pdf_parser_py",
+      "target": "abc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_ingestion_pdf_parser_py",
+      "target": "ingestion_pdf_parser_basepdfparser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_ingestion_pdf_parser_py",
+      "target": "ingestion_pdf_parser_parse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_ingestion_pdf_parser_py",
+      "target": "ingestion_pdf_parser_markerparser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "src_ingestion_pdf_parser_py",
+      "target": "ingestion_pdf_parser_nougatparser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "src_ingestion_pdf_parser_py",
+      "target": "ingestion_pdf_parser_get_parser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "ingestion_pdf_parser_basepdfparser",
+      "target": "abc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "ingestion_pdf_parser_markerparser",
+      "target": "ingestion_pdf_parser_basepdfparser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "ingestion_pdf_parser_nougatparser",
+      "target": "ingestion_pdf_parser_basepdfparser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "ingestion_pdf_parser_rationale_11",
+      "target": "ingestion_pdf_parser_basepdfparser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "ingestion_pdf_parser_markerparser",
+      "target": "ingestion_pdf_parser_markerparser_parse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "ingestion_pdf_parser_get_parser",
+      "target": "ingestion_pdf_parser_markerparser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "ingestion_pdf_parser_rationale_20",
+      "target": "ingestion_pdf_parser_markerparser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ingestion_pdf_parser_markerparser",
+      "target": "ingestion_pdf_parser_nougatparser"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "ingestion_pdf_parser_rationale_23",
+      "target": "ingestion_pdf_parser_markerparser_parse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "ingestion_pdf_parser_nougatparser",
+      "target": "ingestion_pdf_parser_nougatparser_parse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "ingestion_pdf_parser_get_parser",
+      "target": "ingestion_pdf_parser_nougatparser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "ingestion_pdf_parser_rationale_47",
+      "target": "ingestion_pdf_parser_nougatparser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "ingestion_pdf_parser_rationale_50",
+      "target": "ingestion_pdf_parser_nougatparser_parse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pdf_parser.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "ingestion_pdf_parser_rationale_61",
+      "target": "ingestion_pdf_parser_get_parser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "ingestion_pipeline_ingestionmanager_init",
+      "target": "ingestion_pdf_parser_get_parser"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_ingestion_pipeline_py",
+      "target": "ingestion_pipeline_ingestionmanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "ingestion_pipeline_ingestionmanager",
+      "target": "ingestion_pipeline_ingestionmanager_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "ingestion_pipeline_ingestionmanager",
+      "target": "ingestion_pipeline_ingestionmanager_process_directory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "ingestion_pipeline_rationale_15",
+      "target": "ingestion_pipeline_ingestionmanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ingestion_pipeline_ingestionmanager",
+      "target": "engine_index_manager_indexmanager"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/ui/app.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ui_app_app",
+      "target": "ingestion_pipeline_ingestionmanager"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "GEMINI.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "gemini_modular_design",
+      "target": "ingestion_pipeline_ingestionmanager"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "ingestion_pipeline_rationale_29",
+      "target": "ingestion_pipeline_ingestionmanager_process_directory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/ingestion/pipeline.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "ingestion_pipeline_ingestionmanager_process_directory",
+      "target": "engine_index_manager_indexmanager"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/logger.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_utils_logger_py",
+      "target": "utils_logger_setup_logger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/logger.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "utils_logger_rationale_5",
+      "target": "utils_logger_setup_logger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/evaluation/ragas_eval.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_evaluation_ragas_eval_py",
+      "target": "evaluation_ragas_eval_ragasevaluator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/evaluation/ragas_eval.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "evaluation_ragas_eval_ragasevaluator",
+      "target": "evaluation_ragas_eval_ragasevaluator_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/evaluation/ragas_eval.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "evaluation_ragas_eval_ragasevaluator",
+      "target": "evaluation_ragas_eval_ragasevaluator_run_evaluation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/evaluation/ragas_eval.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "evaluation_ragas_eval_rationale_15",
+      "target": "evaluation_ragas_eval_ragasevaluator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/evaluation/ragas_eval.py",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evaluation_ragas_eval_ragasevaluator",
+      "target": "engine_query_engine_materialsragqueryengine"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/evaluation/ragas_eval.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "evaluation_ragas_eval_rationale_27",
+      "target": "evaluation_ragas_eval_ragasevaluator_run_evaluation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_engine_query_engine_py",
+      "target": "engine_query_engine_sourcenode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_engine_query_engine_py",
+      "target": "engine_query_engine_queryresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "src_engine_query_engine_py",
+      "target": "engine_query_engine_materialsragqueryengine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "engine_query_engine_sourcenode",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "engine_query_engine_materialsragqueryengine_query",
+      "target": "engine_query_engine_sourcenode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "engine_query_engine_rationale_14",
+      "target": "engine_query_engine_sourcenode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "source": "engine_query_engine_sourcenode",
+      "target": "engine_index_manager_indexmanager",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "engine_query_engine_queryresult",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "engine_query_engine_materialsragqueryengine_query",
+      "target": "engine_query_engine_queryresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "engine_query_engine_rationale_22",
+      "target": "engine_query_engine_queryresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "source": "engine_query_engine_queryresult",
+      "target": "engine_index_manager_indexmanager",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "engine_query_engine_materialsragqueryengine",
+      "target": "engine_query_engine_materialsragqueryengine_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "engine_query_engine_materialsragqueryengine",
+      "target": "engine_query_engine_materialsragqueryengine_query",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "engine_query_engine_rationale_29",
+      "target": "engine_query_engine_materialsragqueryengine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_query_engine_materialsragqueryengine",
+      "target": "engine_index_manager_indexmanager"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/ui/app.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ui_app_app",
+      "target": "engine_query_engine_materialsragqueryengine"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "engine_query_engine_materialsragqueryengine_init",
+      "target": "engine_index_manager_indexmanager"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/query_engine.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "engine_query_engine_rationale_46",
+      "target": "engine_query_engine_materialsragqueryengine_query",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_engine_index_manager_py",
+      "target": "engine_index_manager_indexmanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "engine_index_manager_indexmanager",
+      "target": "engine_index_manager_indexmanager_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "engine_index_manager_indexmanager",
+      "target": "engine_index_manager_indexmanager_get_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "engine_index_manager_indexmanager",
+      "target": "engine_index_manager_indexmanager_add_documents",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "engine_index_manager_rationale_12",
+      "target": "engine_index_manager_indexmanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/ui/app.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ui_app_app",
+      "target": "engine_index_manager_indexmanager"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/engine/index_manager.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "engine_index_manager_indexmanager",
+      "target": "src_config_settings"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "engine_index_manager_indexmanager_add_documents",
+      "target": "engine_index_manager_indexmanager_get_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "engine_index_manager_rationale_38",
+      "target": "engine_index_manager_indexmanager_get_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/index_manager.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "engine_index_manager_rationale_70",
+      "target": "engine_index_manager_indexmanager_add_documents",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "src_config_settings",
+      "target": "configs_config_yaml_config"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "rag_orchestration_flow",
+      "label": "RAG Orchestration Flow",
+      "nodes": [
+        "ui_app_app",
+        "engine_query_engine_materialsragqueryengine",
+        "engine_index_manager_indexmanager"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/ui/app.py"
+    },
+    {
+      "id": "data_ingestion_path",
+      "label": "Data Ingestion Path",
+      "nodes": [
+        "ui_app_app",
+        "ingestion_pipeline_ingestionmanager",
+        "ingestion_pdf_parser_markerparser",
+        "engine_index_manager_indexmanager"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/ingestion/pipeline.py"
+    }
+  ],
+  "built_at_commit": "2fe1681b379f3ee37370ffe900fd78e850cc34dd"
+}
