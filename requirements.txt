@@ -1,0 +1,11 @@
+llama-index
+chromadb
+sentence-transformers
+ollama
+ragas
+streamlit
+pydantic-settings
+pyyaml
+marker-pdf
+nougat-ocr
+pytest
