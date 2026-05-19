@@ -1,10 +1,12 @@
 import chromadb
-from llama_index.core import VectorStoreIndex, StorageContext
+from llama_index.core import VectorStoreIndex, StorageContext, Settings
 from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from llama_index.embeddings.gemini import GeminiEmbedding
 from llama_index.llms.ollama import Ollama
+from llama_index.llms.gemini import Gemini
 
-from src.config import settings
+from src.config import settings, Provider
 from src.utils.logger import logger
 
 
@@ -14,25 +16,40 @@ class IndexManager:
     def __init__(self):
         self.db_path = settings.storage.chroma_db_path
         self.collection_name = "materials_science_rag"
-        
-        # Initialize embedding model
-        self.embed_model = HuggingFaceEmbedding(
-            model_name=settings.embedding.model_name,
-            device=settings.embedding.device
-        )
-        
-        # Initialize LLM (Ollama)
-        self.llm = Ollama(
-            model=settings.llm.model,
-            base_url=settings.llm.base_url,
-            request_timeout=settings.llm.request_timeout,
-            temperature=settings.llm.temperature
-        )
-        
-        # Set global settings for LlamaIndex
-        from llama_index.core import Settings
-        Settings.llm = self.llm
-        Settings.embed_model = self.embed_model
+        self._setup_models()
+
+    def _setup_models(self):
+        """Initializes LLM and Embedding models based on the provider settings."""
+        # Setup LLM
+        if settings.llm.provider == Provider.API:
+            logger.info(f"Using API-based LLM: {settings.llm.api_model}")
+            Settings.llm = Gemini(
+                model=settings.llm.api_model,
+                api_key=settings.llm.api_key,
+                temperature=settings.llm.temperature
+            )
+        else:
+            logger.info(f"Using Local LLM (Ollama): {settings.llm.model}")
+            Settings.llm = Ollama(
+                model=settings.llm.model,
+                base_url=settings.llm.base_url,
+                request_timeout=settings.llm.request_timeout,
+                temperature=settings.llm.temperature
+            )
+
+        # Setup Embedding
+        if settings.embedding.provider == Provider.API:
+            logger.info(f"Using API-based Embeddings: {settings.embedding.api_model}")
+            Settings.embed_model = GeminiEmbedding(
+                model_name=settings.embedding.api_model,
+                api_key=settings.embedding.api_key
+            )
+        else:
+            logger.info(f"Using Local Embeddings: {settings.embedding.model_name}")
+            Settings.embed_model = HuggingFaceEmbedding(
+                model_name=settings.embedding.model_name,
+                device=settings.embedding.device
+            )
 
     def get_index(self) -> VectorStoreIndex:
         """

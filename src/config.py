@@ -7,11 +7,24 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 import yaml
 
 
+from enum import Enum
+
+class Provider(str, Enum):
+    LOCAL = "local"
+    API = "api"
+
+
 class LLMSettings(BaseSettings):
-    """Settings for the Large Language Model (Ollama)."""
+    """Settings for the Large Language Model."""
     model_config = SettingsConfigDict(extra="allow")
+    provider: Provider = Provider.LOCAL
+    # Local (Ollama)
     base_url: str = Field(default="http://localhost:11434", alias="OLLAMA_BASE_URL")
     model: str = Field(default="llama3", alias="OLLAMA_MODEL")
+    # API (Gemini/OpenAI)
+    api_key: Optional[str] = Field(default=None, alias="GOOGLE_API_KEY")
+    api_model: str = Field(default="gemini-1.5-flash", alias="API_LLM_MODEL")
+    
     temperature: float = 0.1
     request_timeout: float = 120.0
 
@@ -19,8 +32,13 @@ class LLMSettings(BaseSettings):
 class EmbeddingSettings(BaseSettings):
     """Settings for the embedding model."""
     model_config = SettingsConfigDict(extra="allow")
+    provider: Provider = Provider.LOCAL
+    # Local (HuggingFace)
     model_name: str = Field(default="all-MiniLM-L6-v2", alias="EMBEDDING_MODEL_NAME")
     device: str = "cpu"
+    # API (Gemini/OpenAI)
+    api_key: Optional[str] = Field(default=None, alias="GOOGLE_API_KEY")
+    api_model: str = Field(default="models/embedding-001", alias="API_EMBEDDING_MODEL")
 
 
 class StorageSettings(BaseSettings):
