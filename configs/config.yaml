@@ -1,0 +1,14 @@
+llm:
+  model: "llama3"
+  temperature: 0.1
+  request_timeout: 120.0
+
+embedding:
+  model_name: "all-MiniLM-L6-v2"
+  device: "cpu"
+
+storage:
+  chroma_db_path: "./chroma_db"
+  data_dir: "./data"
+
+log_level: "INFO"

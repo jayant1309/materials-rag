@@ -1,4 +1,7 @@
 llama-index
+llama-index-llms-ollama
+llama-index-embeddings-huggingface
+llama-index-vector-stores-chroma
 chromadb
 sentence-transformers
 ollama
@@ -9,3 +12,4 @@ pyyaml
 marker-pdf
 nougat-ocr
 pytest
+loguru
